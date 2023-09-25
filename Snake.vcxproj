@@ -130,6 +130,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameField.cpp" />
+    <ClCompile Include="menu.cpp" />
     <ClCompile Include="snake.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

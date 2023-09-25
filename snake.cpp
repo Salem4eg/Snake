@@ -14,7 +14,7 @@ public:
 
 	Snake(int x = 0, int y = 0) : growth(false), Pdirection(stay)
 	{
-		body.push_back({ 1,2 });
+		body.push_back({ x,y });
 	}
 
 	/*
@@ -60,14 +60,19 @@ public:
 	{
 		direction previous = Pdirection;
 
-		if (GetAsyncKeyState(0x57))
-			Pdirection = up;
-		if (GetAsyncKeyState(0x41))
-			Pdirection = left;
-		if (GetAsyncKeyState(0x44))
-			Pdirection = right;
-		if (GetAsyncKeyState(0x53))
-			Pdirection = down;
+		do
+		{
+			if (GetAsyncKeyState(0x57))
+				Pdirection = up;
+			if (GetAsyncKeyState(0x41))
+				Pdirection = left;
+			if (GetAsyncKeyState(0x44))
+				Pdirection = right;
+			if (GetAsyncKeyState(0x53))
+				Pdirection = down;
+		}
+		while (Pdirection == stay);
+
 
 		//check if head won't try to hit body[1]
 		if (body.size() > 1 && 
@@ -78,4 +83,10 @@ public:
 			Pdirection = previous;
 	}
 
+	void clear(int x = 1, int y = 2)
+	{
+		body.clear();
+		body.push_back({ x,y });
+		Pdirection = stay;
+	}
 };

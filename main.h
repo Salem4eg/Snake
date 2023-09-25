@@ -7,6 +7,8 @@
 #include <random>
 #include <fstream>
 
+enum Language { english, ukrainian, notDefined };
+
 struct coord
 {
 	int x, y;

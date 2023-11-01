@@ -32,7 +32,7 @@ public:
 		menu.emplace_back("#                                       #");
 		menu.emplace_back("#                                       #");
 		menu.emplace_back("#                                       #");
-		menu.emplace_back("#          English | Українська         #");
+		menu.emplace_back("#          English | РЈРєСЂР°С—РЅСЃСЊРєР°         #");
 		menu.emplace_back("#                                       #");
 		menu.emplace_back("#                                       #");
 		menu.emplace_back("#                                       #");
@@ -49,14 +49,14 @@ public:
 		{
 			if (GetAsyncKeyState(0x41))
 			{
-				menu[9] = "#          English<| Українська         #";
+				menu[9] = "#          English<| РЈРєСЂР°С—РЅСЃСЊРєР°         #";
 				lang = english;
 				renderMenu();
 				std::this_thread::sleep_for(std::chrono::milliseconds(100));
 			}
 			if (GetAsyncKeyState(0x44))
 			{
-				menu[9] = "#          English |>Українська         #";
+				menu[9] = "#          English |>РЈРєСЂР°С—РЅСЃСЊРєР°         #";
 				lang = ukrainian;
 				renderMenu();
 				std::this_thread::sleep_for(std::chrono::milliseconds(100));
@@ -122,14 +122,14 @@ public:
 			menu.emplace_back(R"(#  ===| ||\\//|| || || / || | | \  |__| #)");
 			menu.emplace_back(R"(#  ___| ||    || || ||/  || |_|\_\ |  | #)");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#       зроблено Клебаном Назаром       #");
+			menu.emplace_back("#       Р·СЂРѕР±Р»РµРЅРѕ РљР»РµР±Р°РЅРѕРј РќР°Р·Р°СЂРѕРј       #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#        Зіграти на звичайній мапі      #");
-			menu.emplace_back("#          Зіграти на іншій мапі        #");
-			menu.emplace_back("#              Налаштування             #");
-			menu.emplace_back("#                Допомога               #");
-			menu.emplace_back("#                 Вийти                 #");
+			menu.emplace_back("#        Р—С–РіСЂР°С‚Рё РЅР° Р·РІРёС‡Р°Р№РЅС–Р№ РјР°РїС–      #");
+			menu.emplace_back("#          Р—С–РіСЂР°С‚Рё РЅР° С–РЅС€С–Р№ РјР°РїС–        #");
+			menu.emplace_back("#              РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ             #");
+			menu.emplace_back("#                Р”РѕРїРѕРјРѕРіР°               #");
+			menu.emplace_back("#                 Р’РёР№С‚Рё                 #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
@@ -152,11 +152,11 @@ public:
 		}
 		else
 		{
-			buttonsWithArrow.emplace_back("#       >Зіграти на звичайній мапі      #");
-			buttonsWithArrow.emplace_back("#         >Зіграти на іншій мапі        #");
-			buttonsWithArrow.emplace_back("#             >Налаштування             #");
-			buttonsWithArrow.emplace_back("#               >Допомога               #");
-			buttonsWithArrow.emplace_back("#                >Вийти                 #");
+			buttonsWithArrow.emplace_back("#       >Р—С–РіСЂР°С‚Рё РЅР° Р·РІРёС‡Р°Р№РЅС–Р№ РјР°РїС–      #");
+			buttonsWithArrow.emplace_back("#         >Р—С–РіСЂР°С‚Рё РЅР° С–РЅС€С–Р№ РјР°РїС–        #");
+			buttonsWithArrow.emplace_back("#             >РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ             #");
+			buttonsWithArrow.emplace_back("#               >Р”РѕРїРѕРјРѕРіР°               #");
+			buttonsWithArrow.emplace_back("#                >Р’РёР№С‚Рё                 #");
 		}
 
 		menu[10 + button] = buttonsWithArrow[button];
@@ -245,17 +245,17 @@ public:
 		{
 			menu.emplace_back("#########################################");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#               Налаштування            #");
+			menu.emplace_back("#               РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ            #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#=======================================#");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#            Змінити колір фону         #"); // 6
+			menu.emplace_back("#            Р—РјС–РЅРёС‚Рё РєРѕР»С–СЂ С„РѕРЅСѓ         #"); // 6
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#           Змінити колір тексту        #"); // 8
+			menu.emplace_back("#           Р—РјС–РЅРёС‚Рё РєРѕР»С–СЂ С‚РµРєСЃС‚Сѓ        #"); // 8
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#               Змінити мову            #");
+			menu.emplace_back("#               Р—РјС–РЅРёС‚Рё РјРѕРІСѓ            #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#            Повернутись до меню        #"); // 12
+			menu.emplace_back("#            РџРѕРІРµСЂРЅСѓС‚РёСЃСЊ РґРѕ РјРµРЅСЋ        #"); // 12
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
@@ -278,10 +278,10 @@ public:
 		}
 		else
 		{
-			buttonsWithArrow.emplace_back("#           >Змінити колір фону         #");
-			buttonsWithArrow.emplace_back("#          >Змінити колір тексту        #");
-			buttonsWithArrow.emplace_back("#              >Змінити мову            #");
-			buttonsWithArrow.emplace_back("#           >Повернутись до меню        #");
+			buttonsWithArrow.emplace_back("#           >Р—РјС–РЅРёС‚Рё РєРѕР»С–СЂ С„РѕРЅСѓ         #");
+			buttonsWithArrow.emplace_back("#          >Р—РјС–РЅРёС‚Рё РєРѕР»С–СЂ С‚РµРєСЃС‚Сѓ        #");
+			buttonsWithArrow.emplace_back("#              >Р—РјС–РЅРёС‚Рё РјРѕРІСѓ            #");
+			buttonsWithArrow.emplace_back("#           >РџРѕРІРµСЂРЅСѓС‚РёСЃСЊ РґРѕ РјРµРЅСЋ        #");
 		}
 
 		menu[6 + button * 2] = buttonsWithArrow[button];
@@ -391,21 +391,21 @@ public:
 		{
 			menu.emplace_back("#########################################");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#       Налаштування - колір фону       #");
+			menu.emplace_back("#       РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ - РєРѕР»С–СЂ С„РѕРЅСѓ       #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#=======================================#");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#    Чорний          Сірий              #"); // 6
-			menu.emplace_back("#    Синій           Блакитний          #");
-			menu.emplace_back("#    Зелений         Світло-зелений     #");
-			menu.emplace_back("#    Водянистий      Світло-водянистий  #");
-			menu.emplace_back("#    Червоний        Світло-червоний    #");
-			menu.emplace_back("#    Фіолетовий      Світло-фіолетовий  #");
-			menu.emplace_back("#    Жовтий          Світло-жовтий      #");
-			menu.emplace_back("#    Білий           Світло-білий       #"); // 13
+			menu.emplace_back("#    Р§РѕСЂРЅРёР№          РЎС–СЂРёР№              #"); // 6
+			menu.emplace_back("#    РЎРёРЅС–Р№           Р‘Р»Р°РєРёС‚РЅРёР№          #");
+			menu.emplace_back("#    Р—РµР»РµРЅРёР№         РЎРІС–С‚Р»Рѕ-Р·РµР»РµРЅРёР№     #");
+			menu.emplace_back("#    Р’РѕРґСЏРЅРёСЃС‚РёР№      РЎРІС–С‚Р»Рѕ-РІРѕРґСЏРЅРёСЃС‚РёР№  #");
+			menu.emplace_back("#    Р§РµСЂРІРѕРЅРёР№        РЎРІС–С‚Р»Рѕ-С‡РµСЂРІРѕРЅРёР№    #");
+			menu.emplace_back("#    Р¤С–РѕР»РµС‚РѕРІРёР№      РЎРІС–С‚Р»Рѕ-С„С–РѕР»РµС‚РѕРІРёР№  #");
+			menu.emplace_back("#    Р–РѕРІС‚РёР№          РЎРІС–С‚Р»Рѕ-Р¶РѕРІС‚РёР№      #");
+			menu.emplace_back("#    Р‘С–Р»РёР№           РЎРІС–С‚Р»Рѕ-Р±С–Р»РёР№       #"); // 13
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#                Назад                  #"); // 16
+			menu.emplace_back("#                РќР°Р·Р°Рґ                  #"); // 16
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#########################################");
 		}
@@ -442,23 +442,23 @@ public:
 		}
 		else
 		{
-			buttonsWithArrow.emplace_back("#   >Чорний          Сірий              #");
-			buttonsWithArrow.emplace_back("#   >Синій           Блакитний          #");
-			buttonsWithArrow.emplace_back("#   >Зелений         Світло-зелений     #");
-			buttonsWithArrow.emplace_back("#   >Водянистий      Світло-водянистий  #");
-			buttonsWithArrow.emplace_back("#   >Червоний        Світло-червоний    #");
-			buttonsWithArrow.emplace_back("#   >Фіолетовий      Світло-фіолетовий  #");
-			buttonsWithArrow.emplace_back("#   >Жовтий          Світло-жовтий      #");
-			buttonsWithArrow.emplace_back("#   >Білий           Світло-білий       #");
-			buttonsWithArrow.emplace_back("#    Чорний         >Сірий              #");
-			buttonsWithArrow.emplace_back("#    Синій          >Блакитний          #");
-			buttonsWithArrow.emplace_back("#    Зелений        >Світло-зелений     #");
-			buttonsWithArrow.emplace_back("#    Водянистий     >Світло-водянистий  #");
-			buttonsWithArrow.emplace_back("#    Червоний       >Світло-червоний    #");
-			buttonsWithArrow.emplace_back("#    Фіолетовий     >Світло-фіолетовий  #");
-			buttonsWithArrow.emplace_back("#    Жовтий         >Світло-жовтий      #");
-			buttonsWithArrow.emplace_back("#    Білий          >Світло-білий       #");
-			buttonsWithArrow.emplace_back("#               >Назад                  #");
+			buttonsWithArrow.emplace_back("#   >Р§РѕСЂРЅРёР№          РЎС–СЂРёР№              #");
+			buttonsWithArrow.emplace_back("#   >РЎРёРЅС–Р№           Р‘Р»Р°РєРёС‚РЅРёР№          #");
+			buttonsWithArrow.emplace_back("#   >Р—РµР»РµРЅРёР№         РЎРІС–С‚Р»Рѕ-Р·РµР»РµРЅРёР№     #");
+			buttonsWithArrow.emplace_back("#   >Р’РѕРґСЏРЅРёСЃС‚РёР№      РЎРІС–С‚Р»Рѕ-РІРѕРґСЏРЅРёСЃС‚РёР№  #");
+			buttonsWithArrow.emplace_back("#   >Р§РµСЂРІРѕРЅРёР№        РЎРІС–С‚Р»Рѕ-С‡РµСЂРІРѕРЅРёР№    #");
+			buttonsWithArrow.emplace_back("#   >Р¤С–РѕР»РµС‚РѕРІРёР№      РЎРІС–С‚Р»Рѕ-С„С–РѕР»РµС‚РѕРІРёР№  #");
+			buttonsWithArrow.emplace_back("#   >Р–РѕРІС‚РёР№          РЎРІС–С‚Р»Рѕ-Р¶РѕРІС‚РёР№      #");
+			buttonsWithArrow.emplace_back("#   >Р‘С–Р»РёР№           РЎРІС–С‚Р»Рѕ-Р±С–Р»РёР№       #");
+			buttonsWithArrow.emplace_back("#    Р§РѕСЂРЅРёР№         >РЎС–СЂРёР№              #");
+			buttonsWithArrow.emplace_back("#    РЎРёРЅС–Р№          >Р‘Р»Р°РєРёС‚РЅРёР№          #");
+			buttonsWithArrow.emplace_back("#    Р—РµР»РµРЅРёР№        >РЎРІС–С‚Р»Рѕ-Р·РµР»РµРЅРёР№     #");
+			buttonsWithArrow.emplace_back("#    Р’РѕРґСЏРЅРёСЃС‚РёР№     >РЎРІС–С‚Р»Рѕ-РІРѕРґСЏРЅРёСЃС‚РёР№  #");
+			buttonsWithArrow.emplace_back("#    Р§РµСЂРІРѕРЅРёР№       >РЎРІС–С‚Р»Рѕ-С‡РµСЂРІРѕРЅРёР№    #");
+			buttonsWithArrow.emplace_back("#    Р¤С–РѕР»РµС‚РѕРІРёР№     >РЎРІС–С‚Р»Рѕ-С„С–РѕР»РµС‚РѕРІРёР№  #");
+			buttonsWithArrow.emplace_back("#    Р–РѕРІС‚РёР№         >РЎРІС–С‚Р»Рѕ-Р¶РѕРІС‚РёР№      #");
+			buttonsWithArrow.emplace_back("#    Р‘С–Р»РёР№          >РЎРІС–С‚Р»Рѕ-Р±С–Р»РёР№       #");
+			buttonsWithArrow.emplace_back("#               >РќР°Р·Р°Рґ                  #");
 		}
 
 		std::string setColourCommand;
@@ -520,7 +520,7 @@ public:
 
 
 
-		// записати вибір кольору в текстовий файл
+		// Р·Р°РїРёСЃР°С‚Рё РІРёР±С–СЂ РєРѕР»СЊРѕСЂСѓ РІ С‚РµРєСЃС‚РѕРІРёР№ С„Р°Р№Р»
 
 		//showSettings();
 	}
@@ -561,21 +561,21 @@ public:
 		{
 			menu.emplace_back("#########################################");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#       Налаштування - колір тексту     #");
+			menu.emplace_back("#       РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ - РєРѕР»С–СЂ С‚РµРєСЃС‚Сѓ     #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#=======================================#");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#    Чорний          Сірий              #"); // 6
-			menu.emplace_back("#    Синій           Блакитний          #");
-			menu.emplace_back("#    Зелений         Світло-зелений     #");
-			menu.emplace_back("#    Водянистий      Світло-водянистий  #");
-			menu.emplace_back("#    Червоний        Світло-червоний    #");
-			menu.emplace_back("#    Фіолетовий      Світло-фіолетовий  #");
-			menu.emplace_back("#    Жовтий          Світло-жовтий      #");
-			menu.emplace_back("#    Білий           Світло-білий       #"); // 13
+			menu.emplace_back("#    Р§РѕСЂРЅРёР№          РЎС–СЂРёР№              #"); // 6
+			menu.emplace_back("#    РЎРёРЅС–Р№           Р‘Р»Р°РєРёС‚РЅРёР№          #");
+			menu.emplace_back("#    Р—РµР»РµРЅРёР№         РЎРІС–С‚Р»Рѕ-Р·РµР»РµРЅРёР№     #");
+			menu.emplace_back("#    Р’РѕРґСЏРЅРёСЃС‚РёР№      РЎРІС–С‚Р»Рѕ-РІРѕРґСЏРЅРёСЃС‚РёР№  #");
+			menu.emplace_back("#    Р§РµСЂРІРѕРЅРёР№        РЎРІС–С‚Р»Рѕ-С‡РµСЂРІРѕРЅРёР№    #");
+			menu.emplace_back("#    Р¤С–РѕР»РµС‚РѕРІРёР№      РЎРІС–С‚Р»Рѕ-С„С–РѕР»РµС‚РѕРІРёР№  #");
+			menu.emplace_back("#    Р–РѕРІС‚РёР№          РЎРІС–С‚Р»Рѕ-Р¶РѕРІС‚РёР№      #");
+			menu.emplace_back("#    Р‘С–Р»РёР№           РЎРІС–С‚Р»Рѕ-Р±С–Р»РёР№       #"); // 13
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#                Назад                  #");
+			menu.emplace_back("#                РќР°Р·Р°Рґ                  #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#########################################");
 		}
@@ -612,23 +612,23 @@ public:
 		}
 		else
 		{
-			buttonsWithArrow.emplace_back("#   >Чорний          Сірий              #");
-			buttonsWithArrow.emplace_back("#   >Синій           Блакитний          #");
-			buttonsWithArrow.emplace_back("#   >Зелений         Світло-зелений     #");
-			buttonsWithArrow.emplace_back("#   >Водянистий      Світло-водянистий  #");
-			buttonsWithArrow.emplace_back("#   >Червоний        Світло-червоний    #");
-			buttonsWithArrow.emplace_back("#   >Фіолетовий      Світло-фіолетовий  #");
-			buttonsWithArrow.emplace_back("#   >Жовтий          Світло-жовтий      #");
-			buttonsWithArrow.emplace_back("#   >Білий           Світло-білий       #");
-			buttonsWithArrow.emplace_back("#    Чорний         >Сірий              #");
-			buttonsWithArrow.emplace_back("#    Синій          >Блакитний          #");
-			buttonsWithArrow.emplace_back("#    Зелений        >Світло-зелений     #");
-			buttonsWithArrow.emplace_back("#    Водянистий     >Світло-водянистий  #");
-			buttonsWithArrow.emplace_back("#    Червоний       >Світло-червоний    #");
-			buttonsWithArrow.emplace_back("#    Фіолетовий     >Світло-фіолетовий  #");
-			buttonsWithArrow.emplace_back("#    Жовтий         >Світло-жовтий      #");
-			buttonsWithArrow.emplace_back("#    Білий          >Світло-білий       #");
-			buttonsWithArrow.emplace_back("#               >Назад                  #");
+			buttonsWithArrow.emplace_back("#   >Р§РѕСЂРЅРёР№          РЎС–СЂРёР№              #");
+			buttonsWithArrow.emplace_back("#   >РЎРёРЅС–Р№           Р‘Р»Р°РєРёС‚РЅРёР№          #");
+			buttonsWithArrow.emplace_back("#   >Р—РµР»РµРЅРёР№         РЎРІС–С‚Р»Рѕ-Р·РµР»РµРЅРёР№     #");
+			buttonsWithArrow.emplace_back("#   >Р’РѕРґСЏРЅРёСЃС‚РёР№      РЎРІС–С‚Р»Рѕ-РІРѕРґСЏРЅРёСЃС‚РёР№  #");
+			buttonsWithArrow.emplace_back("#   >Р§РµСЂРІРѕРЅРёР№        РЎРІС–С‚Р»Рѕ-С‡РµСЂРІРѕРЅРёР№    #");
+			buttonsWithArrow.emplace_back("#   >Р¤С–РѕР»РµС‚РѕРІРёР№      РЎРІС–С‚Р»Рѕ-С„С–РѕР»РµС‚РѕРІРёР№  #");
+			buttonsWithArrow.emplace_back("#   >Р–РѕРІС‚РёР№          РЎРІС–С‚Р»Рѕ-Р¶РѕРІС‚РёР№      #");
+			buttonsWithArrow.emplace_back("#   >Р‘С–Р»РёР№           РЎРІС–С‚Р»Рѕ-Р±С–Р»РёР№       #");
+			buttonsWithArrow.emplace_back("#    Р§РѕСЂРЅРёР№         >РЎС–СЂРёР№              #");
+			buttonsWithArrow.emplace_back("#    РЎРёРЅС–Р№          >Р‘Р»Р°РєРёС‚РЅРёР№          #");
+			buttonsWithArrow.emplace_back("#    Р—РµР»РµРЅРёР№        >РЎРІС–С‚Р»Рѕ-Р·РµР»РµРЅРёР№     #");
+			buttonsWithArrow.emplace_back("#    Р’РѕРґСЏРЅРёСЃС‚РёР№     >РЎРІС–С‚Р»Рѕ-РІРѕРґСЏРЅРёСЃС‚РёР№  #");
+			buttonsWithArrow.emplace_back("#    Р§РµСЂРІРѕРЅРёР№       >РЎРІС–С‚Р»Рѕ-С‡РµСЂРІРѕРЅРёР№    #");
+			buttonsWithArrow.emplace_back("#    Р¤С–РѕР»РµС‚РѕРІРёР№     >РЎРІС–С‚Р»Рѕ-С„С–РѕР»РµС‚РѕРІРёР№  #");
+			buttonsWithArrow.emplace_back("#    Р–РѕРІС‚РёР№         >РЎРІС–С‚Р»Рѕ-Р¶РѕРІС‚РёР№      #");
+			buttonsWithArrow.emplace_back("#    Р‘С–Р»РёР№          >РЎРІС–С‚Р»Рѕ-Р±С–Р»РёР№       #");
+			buttonsWithArrow.emplace_back("#               >РќР°Р·Р°Рґ                  #");
 		}
 
 		std::string setColourCommand;
@@ -687,7 +687,7 @@ public:
 		}
 
 
-		// записати кольори консолі в текстовий файл
+		// Р·Р°РїРёСЃР°С‚Рё РєРѕР»СЊРѕСЂРё РєРѕРЅСЃРѕР»С– РІ С‚РµРєСЃС‚РѕРІРёР№ С„Р°Р№Р»
 
 		//showSettings();
 	}
@@ -726,21 +726,21 @@ public:
 		{
 			menu.emplace_back("#########################################");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#           Допомога - керування        #");
+			menu.emplace_back("#           Р”РѕРїРѕРјРѕРіР° - РєРµСЂСѓРІР°РЅРЅСЏ        #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#=======================================#");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#  Керування змійкою відбувається       #");
-			menu.emplace_back("#  клавішами W A S D.                   #");
+			menu.emplace_back("#  РљРµСЂСѓРІР°РЅРЅСЏ Р·РјС–Р№РєРѕСЋ РІС–РґР±СѓРІР°С”С‚СЊСЃСЏ       #");
+			menu.emplace_back("#  РєР»Р°РІС–С€Р°РјРё W A S D.                   #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#  Керування меню відбувається так само #");
-			menu.emplace_back("#  але з добавлення клавіші Enter       #");
-			menu.emplace_back("#  для підтвердження дій.               #");
+			menu.emplace_back("#  РљРµСЂСѓРІР°РЅРЅСЏ РјРµРЅСЋ РІС–РґР±СѓРІР°С”С‚СЊСЃСЏ С‚Р°Рє СЃР°РјРѕ #");
+			menu.emplace_back("#  Р°Р»Рµ Р· РґРѕР±Р°РІР»РµРЅРЅСЏ РєР»Р°РІС–С€С– Enter       #");
+			menu.emplace_back("#  РґР»СЏ РїС–РґС‚РІРµСЂРґР¶РµРЅРЅСЏ РґС–Р№.               #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#                Вперед                 #");// 15
-			menu.emplace_back("#                Назад                  #");
+			menu.emplace_back("#                Р’РїРµСЂРµРґ                 #");// 15
+			menu.emplace_back("#                РќР°Р·Р°Рґ                  #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#########################################");
 		}
@@ -755,8 +755,8 @@ public:
 		}
 		else
 		{
-			buttonsWithArrow.emplace_back("#               >Вперед                 #");
-			buttonsWithArrow.emplace_back("#               >Назад                  #");
+			buttonsWithArrow.emplace_back("#               >Р’РїРµСЂРµРґ                 #");
+			buttonsWithArrow.emplace_back("#               >РќР°Р·Р°Рґ                  #");
 		}
 
 		menu[15 + button] = buttonsWithArrow[button];
@@ -834,21 +834,21 @@ public:
 		{
 			menu.emplace_back("#########################################");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#           Допомога - ігролад          #");
+			menu.emplace_back("#           Р”РѕРїРѕРјРѕРіР° - С–РіСЂРѕР»Р°Рґ          #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#=======================================#");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#  Змійка рухається в заданому гравцем  #");
-			menu.emplace_back("#  напрямку. Якщо змійка вдариться в    #");
-			menu.emplace_back("#  стіну або свою частину тіла, то      #");
-			menu.emplace_back("#  грі кінець, а змійку відправляють в  #");
-			menu.emplace_back("#  борщ. Якщо змійка натрапляє на їжу   #");
-			menu.emplace_back("#  '$', то вона збільшується.           #");
+			menu.emplace_back("#  Р—РјС–Р№РєР° СЂСѓС…Р°С”С‚СЊСЃСЏ РІ Р·Р°РґР°РЅРѕРјСѓ РіСЂР°РІС†РµРј  #");
+			menu.emplace_back("#  РЅР°РїСЂСЏРјРєСѓ. РЇРєС‰Рѕ Р·РјС–Р№РєР° РІРґР°СЂРёС‚СЊСЃСЏ РІ    #");
+			menu.emplace_back("#  СЃС‚С–РЅСѓ Р°Р±Рѕ СЃРІРѕСЋ С‡Р°СЃС‚РёРЅСѓ С‚С–Р»Р°, С‚Рѕ      #");
+			menu.emplace_back("#  РіСЂС– РєС–РЅРµС†СЊ, Р° Р·РјС–Р№РєСѓ РІС–РґРїСЂР°РІР»СЏСЋС‚СЊ РІ  #");
+			menu.emplace_back("#  Р±РѕСЂС‰. РЇРєС‰Рѕ Р·РјС–Р№РєР° РЅР°С‚СЂР°РїР»СЏС” РЅР° С—Р¶Сѓ   #");
+			menu.emplace_back("#  '$', С‚Рѕ РІРѕРЅР° Р·Р±С–Р»СЊС€СѓС”С‚СЊСЃСЏ.           #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#  Щоб перемогти, змійка має набрати    #");
-			menu.emplace_back("#  304 очки (в звичайній грі)           #");
+			menu.emplace_back("#  Р©РѕР± РїРµСЂРµРјРѕРіС‚Рё, Р·РјС–Р№РєР° РјР°С” РЅР°Р±СЂР°С‚Рё    #");
+			menu.emplace_back("#  304 РѕС‡РєРё (РІ Р·РІРёС‡Р°Р№РЅС–Р№ РіСЂС–)           #");
 			menu.emplace_back("#                                       #");// 15
-			menu.emplace_back("#               >Назад                  #");
+			menu.emplace_back("#               >РќР°Р·Р°Рґ                  #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#########################################");
 		}
@@ -898,21 +898,21 @@ public:
 		{
 			menu.emplace_back("# # # # # # # # # # # # # # # # # # # # #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#               Оберіть мапу            #"); // 2
+			menu.emplace_back("#               РћР±РµСЂС–С‚СЊ РјР°РїСѓ            #"); // 2
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#########################################");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#                  Мапа 1               #"); // 8
+			menu.emplace_back("#                  РњР°РїР° 1               #"); // 8
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#                  Мапа 2               #"); // 10
+			menu.emplace_back("#                  РњР°РїР° 2               #"); // 10
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#                  Мапа 3               #"); // 12
+			menu.emplace_back("#                  РњР°РїР° 3               #"); // 12
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#                  Назад                #"); // 16
+			menu.emplace_back("#                  РќР°Р·Р°Рґ                #"); // 16
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("# # # # # # # # # # # # # # # # # # # # #");
 		}
@@ -931,10 +931,10 @@ public:
 		}
 		else
 		{
-			buttonsWithArrow.emplace_back("#                 >Мапа 1               #");
-			buttonsWithArrow.emplace_back("#                 >Мапа 2               #");
-			buttonsWithArrow.emplace_back("#                 >Мапа 3               #");
-			buttonsWithArrow.emplace_back("#                 >Назад                #");
+			buttonsWithArrow.emplace_back("#                 >РњР°РїР° 1               #");
+			buttonsWithArrow.emplace_back("#                 >РњР°РїР° 2               #");
+			buttonsWithArrow.emplace_back("#                 >РњР°РїР° 3               #");
+			buttonsWithArrow.emplace_back("#                 >РќР°Р·Р°Рґ                #");
 		}
 
 		menu[8] = buttonsWithArrow[button];
@@ -1024,12 +1024,12 @@ public:
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#        Зіграти знову на цій мапі?     #");
+			menu.emplace_back("#        Р—С–РіСЂР°С‚Рё Р·РЅРѕРІСѓ РЅР° С†С–Р№ РјР°РїС–?     #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#                  Так                  #"); // 8
+			menu.emplace_back("#                  РўР°Рє                  #"); // 8
 			menu.emplace_back("#                                       #");
-			menu.emplace_back("#            Повернутись до меню        #"); // 10
+			menu.emplace_back("#            РџРѕРІРµСЂРЅСѓС‚РёСЃСЊ РґРѕ РјРµРЅСЋ        #"); // 10
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
 			menu.emplace_back("#                                       #");
@@ -1050,8 +1050,8 @@ public:
 		}
 		else
 		{
-			buttonsWithArrow.emplace_back("#                 >Так                  #");
-			buttonsWithArrow.emplace_back("#           >Повернутись до меню        #");
+			buttonsWithArrow.emplace_back("#                 >РўР°Рє                  #");
+			buttonsWithArrow.emplace_back("#           >РџРѕРІРµСЂРЅСѓС‚РёСЃСЊ РґРѕ РјРµРЅСЋ        #");
 		}
 
 
@@ -1138,8 +1138,8 @@ public:
 			std::cout << R"(#                                       #)" << std::endl;
 			std::cout << R"(#                                       #)" << std::endl;
 			std::cout << R"(#                                       #)" << std::endl;
-			std::cout << R"(#              Вітаю тебе!              #)" << std::endl;
-			std::cout << R"(#            >Натисни Enter             #)" << std::endl;
+			std::cout << R"(#              Р’С–С‚Р°СЋ С‚РµР±Рµ!              #)" << std::endl;
+			std::cout << R"(#            >РќР°С‚РёСЃРЅРё Enter             #)" << std::endl;
 			std::cout << R"(#                                       #)" << std::endl;
 			std::cout << R"(#########################################)" << std::endl;
 		}
@@ -1186,7 +1186,7 @@ public:
 			std::cout << R"(#                                       #)" << std::endl;
 			std::cout << R"(#                                       #)" << std::endl;
 
-			temp = "#       Твій рахунок ";
+			temp = "#       РўРІС–Р№ СЂР°С…СѓРЅРѕРє ";
 		}
 		temp += std::to_string(score);
 		while (temp.size() < 40)
@@ -1196,7 +1196,7 @@ public:
 		if (lang == english)
 			temp = "#       Your best score is ";
 		else
-			temp = "#       Твій найкращий рахунок ";
+			temp = "#       РўРІС–Р№ РЅР°Р№РєСЂР°С‰РёР№ СЂР°С…СѓРЅРѕРє ";
 		temp += std::to_string(bestScore);
 		while (temp.size() < 40)
 			temp += ' ';
@@ -1209,7 +1209,7 @@ public:
 		if (lang == english)
 			std::cout << R"(#             >Press enter              #)" << std::endl;
 		else
-			std::cout << R"(#            >Натисни Enter             #)" << std::endl;
+			std::cout << R"(#            >РќР°С‚РёСЃРЅРё Enter             #)" << std::endl;
 
 		std::cout << R"(#                                       #)" << std::endl;
 		std::cout << R"(#########################################)" << std::endl;
